@@ -22,15 +22,41 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+# NestJS Task Manager
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+A task management application built using NestJS with JWT-based authentication and PostgreSQL integration.
+ repository.
 
-## Project setup
+## Features
+- User authentication (register/login) with hashed passwords.
+- Task management: create, update, delete, and view tasks.
+- Secure routes using JWT.
+- Role-based access control (optional).
 
-```bash
-$ npm install
-```
+## Tech Stack
+- **Backend**: NestJS, TypeORM
+- **Database**: PostgreSQL
+- **Authentication**: JWT, Passport.js
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AbdullahSoftech/NestJs_Task_Manager.git
+   cd NestJs_Task_Manager
+
+2. install the packages
+     ```bash
+      $ npm install
+    ```
+3. Add the .env file with these env variables
+    ```bash
+    JWT_SECRET=secret_key
+    DB_HOST=host_name
+    DB_PORT=port
+    DB_USERNAME=db_username
+    DB_PASSWORD=db_pswrd
+    DB_DATABASE=db_name
+    ```
 
 ## Compile and run the project
 
@@ -41,35 +67,8 @@ $ npm run start
 # watch mode
 $ npm run start:dev
 
-# production mode
-$ npm run start:prod
 ```
 
-## Run tests
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Deployment
-
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
-
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
-
-```bash
-$ npm install -g mau
-$ mau deploy
-```
-
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
 
 ## Resources
 
@@ -84,16 +83,3 @@ Check out a few resources that may come in handy when working with NestJS:
 - To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
 - Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
